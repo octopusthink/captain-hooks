@@ -1,0 +1,25 @@
+---
+pr:
+  branches:
+    exclude:
+      - gh-pages
+    include:
+      - '*'
+
+trigger:
+  branches:
+    exclude:
+      - gh-pages
+    include:
+      - master
+
+jobs:
+  - job: test
+    displayName: Test
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+      - script: yarn install
+        displayName: 'Install dependencies'
+      - script: yarn test:all-with-coverage
+        displayName: 'Run unit tests'

@@ -1,0 +1,18 @@
+{
+  "extends": ["airbnb", "plugin:jest/recommended", "prettier"],
+  "parser": "babel-eslint",
+  "plugins": ["prettier", "react-hooks"],
+  "rules": {
+    "import/no-named-as-default": false,
+    "import/prefer-default-export": false,
+    "jsx-a11y/label-has-for": false,
+    "jsx-a11y/label-has-associated-control": "error",
+    "react/forbid-foreign-prop-types": false,
+    "react/prop-types": false,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react/jsx-filename-extension": false,
+    "prettier/prettier": "error"
+  },
+  "settings": {}
+}

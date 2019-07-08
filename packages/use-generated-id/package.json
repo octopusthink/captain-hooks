@@ -1,0 +1,29 @@
+{
+  "name": "@octopusthink/react-use-generated-id",
+  "version": "0.0.0",
+  "description": "Create a short, unique ID to use in your component.",
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "repository": "https://github.com/octopusthink/captain-hooks.git",
+  "author": "Matthew Riley MacPherson <hi@tofumatt.com> (tofumatt)",
+  "homepage": "https://github.com/octopusthink/captain-hooks",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "shortid": "^2.2.14"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  }
+}

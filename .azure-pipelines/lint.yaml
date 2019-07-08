@@ -1,0 +1,25 @@
+---
+pr:
+  branches:
+    exclude:
+      - gh-pages
+    include:
+      - '*'
+
+trigger:
+  branches:
+    exclude:
+      - gh-pages
+    include:
+      - master
+
+jobs:
+  - job: lint
+    displayName: Lint
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+      - script: yarn install
+        displayName: 'Install dependencies'
+      - script: yarn lint
+        displayName: 'Lint code'
